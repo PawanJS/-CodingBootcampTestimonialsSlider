@@ -1,0 +1,38 @@
+/* Basic */
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+}
+
+/* Main */
+.container {
+  max-width: 114rem;
+  width: 100%;
+}
+
+/* Footer*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Classes to add with javaScript */
+
+/* Media queries */
