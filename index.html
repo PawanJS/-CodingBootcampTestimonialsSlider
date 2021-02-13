@@ -18,14 +18,16 @@
     />
     <link rel="stylesheet" href="css/mainStyle.css" />
     <script defer src="js/main.js"></script>
-    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+    <title>Frontend Mentor | Coding BootCamp Testimonials Slider</title>
   </head>
   <body>
     <main class="container">
-      <svg class="testimonial--quote">
-        <use xlink:href="images/sprite.svg#pattern-quotes"></use>
-      </svg>
       <div class="testimonial">
+        <img
+          src="images/pattern-quotes.svg"
+          class="testimonial--quote"
+          alt="quotes"
+        />
         <p class="paragraph">
           “ I’ve been interested in coding for a while but never taken the jump,
           until now. I couldn’t recommend this course enough. I’m now in the job
@@ -35,30 +37,37 @@
           Tanya Sinclair
           <span>UX Engineer</span>
         </div>
+        <img
+          src="images/pattern-curve.svg"
+          class="testimonial--bg"
+          alt="curve pattern"
+        />
       </div>
-      <svg class="testimonial--bg">
-        <use xlink:href="images/sprite.svg#pattern-curve"></use>
-      </svg>
-      <img
-        src="images/image-tanya.jpg"
-        alt="Tanya ux-designer"
-        class="testimonial__img"
-      />
-      <div class="testimonial__button-box">
-        <button class="testimonial--btn">
-          <svg class="testimonial--btn">
-            <use xlink:href="images/sprite.svg#icon-prev"></use>
-          </svg>
-        </button>
-        <button class="testimonial--btn">
-          <svg class="testimonial--btn">
-            <use xlink:href="images/sprite.svg#icon-next"></use>
-          </svg>
-        </button>
+      <div class="testimonial__img-box">
+        <img
+          src="images/image-tanya.jpg"
+          alt="Tanya ux-designer"
+          class="testimonial__img"
+        />
+
+        <img
+          src="images/pattern-bg.svg"
+          class="testimonial--bg-2"
+          alt="pattern-bg"
+        />
+        <div class="testimonial__button-box">
+          <button class="testimonial--btn">
+            <svg class="testimonial--btn-prev">
+              <use xlink:href="images/sprite.svg#icon-prev"></use>
+            </svg>
+          </button>
+          <button class="testimonial--btn">
+            <svg class="testimonial--btn-next">
+              <use xlink:href="images/sprite.svg#icon-next"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <svg class="testimonial--bg-2">
-        <use xlink:href="images/sprite.svg#pattern-bg"></use>
-      </svg>
     </main>
     <!-- 
 

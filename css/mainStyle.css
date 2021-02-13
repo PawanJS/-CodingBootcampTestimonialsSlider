@@ -12,16 +12,95 @@ html {
 }
 
 body {
+  box-sizing: inherit;
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 300;
   font-family: "Inter", sans-serif;
+  display: grid;
+  place-items: center;
+  grid-row-gap: 5rem;
+  min-height: 100vh;
+}
+
+/* Typography */
+.paragraph {
+  font-size: 3rem;
 }
 
 /* Main */
 .container {
-  max-width: 114rem;
-  width: 100%;
+  max-width: 124rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonial {
+  position: relative;
+}
+
+.testimonial--quote {
+  position: absolute;
+  top: -6.5rem;
+  left: 7rem;
+}
+
+.testimonial--bg,
+.testimonial--bg-2 {
+  position: absolute;
+}
+
+.testimonial--bg {
+  left: 0;
+  bottom: -18rem;
+}
+
+.testimonial--bg-2 {
+  right: 1rem;
+  bottom: -6rem;
+  z-index: -10;
+}
+
+.testimonial__img-box {
+  position: relative;
+}
+
+.testimonial__img {
+  margin-left: -5rem;
+  position: relative;
+  z-index: -1;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 5rem hsl(240, 18%, 77%);
+}
+
+.testimonial__button-box {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 3rem;
+  left: 1rem;
+  bottom: -3rem;
+  padding: 2rem 3rem;
+}
+
+.testimonial--btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.testimonial--btn:focus {
+  outline: none;
+}
+
+.testimonial--btn-prev,
+.testimonial--btn-next {
+  width: 2rem;
+  height: 2rem;
+}
+
+.testimonial--btn-prev {
+  margin-right: 1.5rem;
 }
 
 /* Footer*/
