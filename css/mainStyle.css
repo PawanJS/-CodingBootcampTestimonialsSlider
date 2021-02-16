@@ -34,15 +34,15 @@ body {
   position: relative;
   max-width: 124rem;
   width: 100%;
-  height: 55rem;
+  height: 70rem;
 
   /* IN THE END */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .testimonial-slide {
   position: absolute;
-  top: 0;
+  top: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -97,7 +97,7 @@ body {
 }
 
 .testimonial__quote-box {
-  top: 0.5rem;
+  top: 14rem;
   left: 10rem;
 }
 
@@ -111,7 +111,7 @@ body {
 .testimonial__bg-box-2 {
   width: 65rem;
   right: 4rem;
-  bottom: 0;
+  bottom: 4em;
   z-index: -10;
 }
 
@@ -121,7 +121,7 @@ body {
   padding: 2rem 3.5rem;
   position: absolute;
   right: 30%;
-  bottom: 2rem;
+  bottom: 7rem;
 }
 
 .testimonial--btn {
@@ -158,12 +158,44 @@ body {
   color: hsl(240, 18%, 77%);
 }
 
-/* Classes to add with javaScript */
+/* Dots */
+.dots-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 45%;
+}
+
+.dots__dot {
+  width: 1.7rem;
+  height: 1.7rem;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(240, 18%, 77%);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.dots__dot:nth-of-type(1) {
+  margin-right: 1rem;
+}
+
+.dots__dot:focus {
+  outline: none;
+}
+
+.dots__dot--active {
+  background-color: hsl(228, 45%, 44%);
+  opacity: 1;
+}
 
 /* Media queries */
 @media only screen and (max-width: 75em) {
   html {
     font-size: 50%;
+  }
+  .testimonial__quote-box {
+    top: 13rem;
   }
 }
 
@@ -177,8 +209,7 @@ body {
   }
 
   .testimonial__quote-box {
-    top: 5rem;
-    left: 10rem;
+    top: 17rem;
     width: 5rem;
   }
 
@@ -188,14 +219,14 @@ body {
   }
 
   .testimonial__bg-box-2 {
-    width: 50rem;
+    width: 53rem;
     right: 1rem;
-    bottom: 10rem;
+    bottom: 15rem;
   }
 
   .testimonial__button-box {
     right: 30%;
-    bottom: 12rem;
+    bottom: 17rem;
   }
 
   .testimonial--author {
@@ -210,10 +241,6 @@ body {
 }
 
 @media only screen and (max-width: 40em) {
-  .slider-container {
-    height: 65rem;
-  }
-
   .paragraph {
     font-size: 2rem;
   }
@@ -226,6 +253,7 @@ body {
     grid-template-columns: 1fr;
     grid-row-gap: 5rem;
     justify-items: center;
+    top: 3rem;
   }
 
   .testimonial__img-box {
@@ -238,8 +266,7 @@ body {
   }
 
   .testimonial__quote-box {
-    top: 38rem;
-    left: 10rem;
+    top: 41rem;
   }
 
   .testimonial__bg-box {
@@ -250,12 +277,12 @@ body {
   .testimonial__bg-box-2 {
     width: 43rem;
     right: 15%;
-    bottom: 27rem;
+    bottom: 29rem;
   }
 
   .testimonial__button-box {
-    right: 37%;
-    bottom: 28rem;
+    right: 40%;
+    bottom: 30rem;
     padding: 1.5rem 3rem;
   }
 }
@@ -270,7 +297,7 @@ body {
   }
 
   .testimonial__quote-box {
-    top: 36rem;
+    top: 35rem;
     left: 10rem;
   }
 
@@ -281,11 +308,12 @@ body {
   .testimonial__bg-box-2 {
     width: 38rem;
     right: 5%;
-    bottom: 32rem;
+    bottom: 34rem;
   }
 
   .testimonial__button-box {
-    bottom: 33rem;
+    right: 35%;
+    bottom: 35rem;
     padding: 1.5rem 3rem;
   }
 }
