@@ -189,6 +189,14 @@ body {
   opacity: 1;
 }
 
+/* Screen reader only */
+.scr-only {
+  position: absolute;
+  left: -100000px;
+  width: 1px;
+  height: 1px;
+}
+
 /* Media queries */
 @media only screen and (max-width: 75em) {
   html {

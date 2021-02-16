@@ -16,6 +16,7 @@ const slider = function () {
       dotContainer.insertAdjacentHTML(
         "beforeend",
         `<button class="dots__dot" data-slide=${i}>
+        <span class="scr-only">Dots</span>
         </button>`
       )
     );
